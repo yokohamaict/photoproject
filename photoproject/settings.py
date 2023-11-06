@@ -121,8 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 # 静的ファイルの設定
-STATIC_URL = 'static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ('home/ubuntu/static')
 STATIC_ROOT = '/home/ubuntu/static' # 本番環境でstaticフォルダを配置する場所
 
 # メディアファイルの設定
