@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*ux!4#l$=c*x2v7h&6-r695dkk$bnyd&c+zbrt2vm13bg*5a2i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False # 変更
 
 ALLOWED_HOSTS = ["*"] # 変更
 
@@ -123,6 +123,7 @@ USE_TZ = True
 # 静的ファイルの設定
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = '/home/ubuntu/static' # 本番環境でstaticフォルダを配置する場所
 
 # メディアファイルの設定
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
